@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+
+    <link rel="icon" href="./favicons/favicon-16x16.png">
+</head>
+
+<body>
+    <div class="caixa-maior">
+        <input class="input-cidade" placeholder="Cidade" type="search">
+
+        <button class="botao-busca" onclick="cliqueiNoBotao();">
+            <img class="img-busca" src="https://www.svgrepo.com/show/488200/find.svg" alt="busca">
+        </button>
+
+        <div class="caixa-media">
+            <h2 class="cidade"></h2>
+
+            <p class="temp">0°C</p>
+            <p class="temp-max">Máx: 0°C</p>
+            <p class="temp-min">Min: 0°C</p>
+            <div class="clock">
+                <p id="date"></p>
+                <p id="time"></p>
+            </div>
+            <div class="caixa-menor">
+                <img class="img-previsao" src="https://openweathermap.org/img/wn/04n.png" alt="ícone-infor-tempo">
+
+                <p class="texto-previsao"></p>
+            </div>
+
+            <p class="umidade">Umidade do ar: 0%</p>
+            <p class="vento-velocidade-direcao">vento</p>
+        </div>
+    </div>
+    <script src=".js/geolocalizacao.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/relogio.js"></script>
+</body>
+
+</html>
